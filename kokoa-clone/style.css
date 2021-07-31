@@ -1,0 +1,46 @@
+html {
+    background-color: yellow;
+}
+h1 {
+    color:yellowgreen;
+    font-size:20px;
+    font-weight:800;
+    
+}
+body {
+    background-color:gray;
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+div {
+    padding: 10px 20px;
+}
+
+#first {
+    background-color: turquoise;
+    width: 150px;
+    height: 150px;
+}
+
+#second {
+    background-color: wheat;
+    width: 100px;
+    height: 100px;
+}
+
+#third {
+    background-color:violet;
+    width: 50px;
+    height: 50px;
+}
+
+#fourth {
+    background-color: teal;
+    width: 25px;
+    height: 25px;
+}
+span {
+    color: blue;
+    
+}
