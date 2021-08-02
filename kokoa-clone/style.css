@@ -1,6 +1,6 @@
 body {
     height: 1000vh;
-    margin: 20px;
+    margin: 50px;
 }
 div {
     
@@ -8,5 +8,8 @@ div {
     height: 100px;
     background-color: wheat;
     position: relative;
-    
+}
+
+div:nth-child(even) {
+    background-color: teal;
 }
