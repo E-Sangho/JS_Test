@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: Times;
+}
+
+#outerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 1000px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.innerBox {
+    margin: 10px;
+    border: solid white 5px;
+    width: 180px;
+    height: 300px;
+    position: relative;
+}
+
+.innerBox:first-child {
+    background-color: tomato;
+}
+
+.innerBox:nth-child(2) {
+    background-color: teal;
+}
+
+.innerBox:nth-child(3) {
+    background-color: burlywood;
+}
+
+.innerBox:last-child {
+    background-color: thistle;
+}
+
+.whiteBox {
+    background-color: white;
+    width: 170px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.colorName {
+    font-size: 18px;
+}
+
+.colorCode {
+    font-size: 14px;
+}
