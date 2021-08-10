@@ -1,0 +1,87 @@
+body {
+    height: 100vh;
+    background-color: #6bbcbe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotateCircles {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+
+@keyframes scaleRectangle {
+    0% {
+        transform: scale(1,1);
+    }
+
+    30% {
+        transform: scale(1,2);
+    }
+
+    60% {
+        transform: scale(1,1);
+    }
+}
+
+#circleSet {
+    height: 20vh;
+    width: 20vh;
+    margin: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: rotateCircles 1s ease-in-out infinite;
+}
+
+.circle {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#rectangleSet {
+    height: 20vh;
+    width: 20vh;
+    margin: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rectangle {
+    width: 14%;
+    height: 50%;
+    background-color: white;
+}
+
+.rectangle:first-child {
+    animation: scaleRectangle 1s ease-in-out infinite;
+}
+
+.rectangle:nth-child(2) {
+    animation: scaleRectangle 1s ease-in-out infinite 0.1s;
+}
+
+.rectangle:nth-child(3) {
+    animation: scaleRectangle 1s ease-in-out infinite 0.2s;
+}
+
+.rectangle:nth-child(4) {
+    animation: scaleRectangle 1s ease-in-out infinite 0.3s;
+}
+
+.rectangle:last-child {
+    animation: scaleRectangle 1s ease-in-out infinite 0.4s;
+}
