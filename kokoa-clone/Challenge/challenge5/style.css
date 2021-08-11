@@ -1,0 +1,182 @@
+:root {
+    --border-color: #00C7AC;
+    --image1-color: #FFBD10;
+    --image2-color: #F8592A;
+    --image3-color: #FF8ABB;
+    --image4-color: #1847E5;
+    --image5-color: #00C7AC;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: solid 5px var(--border-color);
+    height: 100vh;
+}
+/*--- Playlist ---*/
+.playlist {
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    margin: 10px;
+}
+
+.playlist__box {
+    width: 33%;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.playlist__box:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist__xbutton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+}
+
+.whiteButton {
+    border: none;
+    background: none;
+}
+/*--- musicBox ---*/
+.musicBox {
+    height: 20%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.musicBox__image {
+    width: 100px;
+    height: 100px;
+    background-color: var(--image1-color);
+}
+
+.musicBox__image i {
+    color: white;
+}
+.roundBox {
+    border-radius: 15px;
+    border: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.musicBox__information {
+    height: 80%;
+    width: 70%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.musicBox__information__title {
+    height: 60%;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 0.8;
+    margin: 5px;
+}
+
+.musicBox__information__singer {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+    height: 30%;
+}
+/*--- buttonBox ---*/
+.buttonBox {
+    display: flex;
+    height: 10%;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonBox__play {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonBox__play i {
+    padding-right: 10px;
+}
+.buttonBox__heart, .buttonBox__plus {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleButton {
+    border-radius: 50%;
+    border: solid 2px black;
+    margin: 10px;
+}
+
+.shadow {
+    box-shadow: 0px 4px black;
+}
+/*--- otherSongs---*/
+.otherSongs {
+    height: 40%;
+    margin: 10px;
+}
+
+.otherSongs__Box {
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.otherSongs__Box__image1,
+.otherSongs__Box__image2,
+.otherSongs__Box__image3,
+.otherSongs__Box__image4
+{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.otherSongs__Box__image1 {
+    background-color: var(--image2-color);
+}
+
+.otherSongs__Box__image2 {
+    background-color: var(--image3-color);
+}
+
+.otherSongs__Box__image3 {
+    background-color: var(--image4-color);
+}
+
+.otherSongs__Box__image4 {
+    background-color: var(--image5-color);
+}
+
+.otherSongs__Box__information{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.otherSongs__Box__information__title {
+    font-weight: bold;
+}
+
+.otherSongs__Box__information__singer {
+    font-size: small;
+    color: gray;
+}
