@@ -1,0 +1,73 @@
+.book {
+    height: 250px;
+    display: flex;
+    margin: 5%;
+}
+
+.book__image {
+    display: flex;
+    align-items: center;
+}
+
+.book__image img{
+    height: 235px;
+    width: 160px;
+}
+
+.book__info {
+    height: 220px;
+    width: 250px;
+    margin: 3% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.book__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.book__genre {
+    color: var(--gray);
+}
+
+.book__stars {
+    display: flex;
+}
+
+.book__categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.book__catBtn {
+    width: 70px;
+    height: 30px;
+    border: none;
+    margin-right: 10px;
+}
+
+.book__buttons {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.book__mark {
+    height: 50px;
+    width: 50px;
+    background-color: var(--yellow);
+    border: none;
+    margin-right: 20px;
+}
+
+.book__nowBtn {
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: black;
+    color: white;
+}

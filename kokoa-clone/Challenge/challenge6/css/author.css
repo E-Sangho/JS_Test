@@ -1,0 +1,35 @@
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author__image {
+    margin: 5%;
+}
+
+.author__image img {
+    width: 180px;
+    height: 250px;
+}
+
+.author__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.author__name {
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+
+}
+
+.author__explain {
+    height: 140px;
+    font-size: 20px;
+    color: var(--gray);
+    text-align: start;
+}

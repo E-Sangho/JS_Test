@@ -1,0 +1,39 @@
+@import "css/reset.css";
+@import "css/topbar.css";
+@import "css/book.css";
+@import "css/list.css";
+@import "css/author.css";
+
+:root{
+    --yellow: #FFCE33;
+    --gray: rgba(0, 0, 0, 0.1);
+}
+
+.body {
+    height: 100vh;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    height: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 2% 5%;
+}
+
+.yellowStar {
+    color: var(--yellow);
+}
+
+.emptyStar {
+    color: var(--gray);
+}
+
+.roundRectangle, .roundRectangle img{
+    border-radius: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+}

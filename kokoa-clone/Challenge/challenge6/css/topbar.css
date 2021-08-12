@@ -1,0 +1,56 @@
+.topBar {
+    height: 150px;
+    width: 100%;
+    background-color: var(--yellow);
+    display: flex;
+}
+
+.topBar div {
+    width: 33%;
+    display:flex;
+    align-items: center;
+    padding: 5%;
+
+}
+
+.topBar__menu {
+    justify-content: flex-start;
+}
+
+.topBar__title {
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.topBar__shopping {
+    justify-content: flex-end;
+}
+
+.search {
+    width: 90%;
+    height: 70px;
+    position: relative;
+    top: -35px;
+    margin: 0px 5%;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    border-radius: 40px;
+    
+}
+
+.search__bar {
+    border:none;
+    height: 100%;
+    width: 80%;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.search__bar::placeholder, .search i {
+    color: var(--gray);
+}
