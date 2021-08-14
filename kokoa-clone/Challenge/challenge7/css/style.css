@@ -1,0 +1,245 @@
+@import "reset.css";
+:root{
+    --transparent: rgba(0, 0, 0, 0.5);
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(225, 225, 225, 0.7);
+}
+
+.page1, .page2 {
+    border-radius: 40px;
+    width: 300px;
+    height: 90%;
+    background-color: white;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 5%;
+}
+
+.playing-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playing-info__img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 20px rgba(200, 120, 80, 0.7);
+}
+
+.playing-info__creator {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.playing-info__genre {
+    color: var(--transparent);
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 25px;
+    margin-bottom: 25px;
+}
+
+.buttons__shuffle {
+    border: none;
+    color: white;
+    background-color: black;
+    width: 45%;
+    height: 40px;
+    border-radius: 25px;
+    
+}
+
+.buttons__heart {
+    border: none;
+    color: var(--transparent);
+    background-color: white;
+    width: 45%;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list__li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 0px 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.list__li:nth-child(2) {
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+}
+
+.list__music {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list__music img {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.list__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list__creator {
+    font-size: 12px;
+    color: var(--transparent);
+    margin-bottom: 5px;
+}
+
+.list__title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.list__icon {
+    color: var(--transparent);
+}
+
+.play-bar {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translate(-50%, 0);
+    width: 75%;
+    height: 70px;
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.play-bar__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.play-bar__creator {
+    color: rgba(200, 200, 200, 0.8);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.play-bar__title {
+    color: white;
+    font-size: 14px;
+}
+
+.play-bar__icon {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.play-bar__icon i {
+    margin-left: 20px;
+}
+
+/* page2 */
+.playing-info--player {
+    margin-top: 50px;
+}
+
+.playing-info__img--xl{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px 15px 30px rgba(200, 120, 80, 0.7);
+}
+
+.playing-info__creator--player {
+    margin-bottom: 25px;
+}
+
+.playing-info__genre--player {
+    margin-bottom: 40px;
+}
+
+.music {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.music__time {
+    display: flex;
+    height: 10px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.music__time-1, .music__time-2 {
+    color: var(--transparent);
+    font-size: 12px;
+}
+
+.music__bar {
+    width: 90%;
+    height: 5px;
+    border-radius: 5px;
+    border:none;
+}
+
+.music__bar:focus {
+    outline: none;
+}
+
+.music__buttons {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.music__buttons i:first-child,
+.music__buttons i:last-child {
+    color: var(--transparent);
+}
